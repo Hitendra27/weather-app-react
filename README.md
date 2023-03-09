@@ -1,3 +1,12 @@
+# Weather App in React
+
+Building a React JS weather app using the OpenWeatherMap API.
+
+We will be using axios to connect with our API. 
+### screenshots of the weather app.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
