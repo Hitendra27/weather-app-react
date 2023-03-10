@@ -21,6 +21,8 @@ function App() {
 
   // What are the weather condition codes and icons?
 
+  // | {data.sys.country}
+
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
 
@@ -51,28 +53,44 @@ function App() {
         <div className="top">
           <div className="location">
             <p>{data.name}</p>
+            {data.weather ? <p> {data.sys.country}</p> : null}
           </div>
           <div className="temp">
-            {data.main ? <h1>{data.main.temp}°C</h1> : null}
+            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
-        <div className="bottom">
-          <div className="feels">
-            <p className="bold">65°F</p>
-            <p>Feels Like</p>
+
+        {data.name != undefined && (
+          <div className="bottom">
+            <div className="feels">
+              <p className="bold">
+                {data.weather ? (
+                  <p className="bold">{data.main.feels_like.toFixed()}°C</p>
+                ) : null}
+              </p>
+              <p>Feels Like</p>
+            </div>
+            <div className="humidity">
+              <p className="bold">
+                {data.weather ? (
+                  <p className="bold">{data.main.humidity}%</p>
+                ) : null}
+              </p>
+              <p>Humidity</p>
+            </div>
+            <div className="wind">
+              <p className="bold">
+                {data.weather ? (
+                  <p className="bold">{data.wind.speed.toFixed()}MPH</p>
+                ) : null}
+              </p>
+              <p>Wind Speed</p>
+            </div>
           </div>
-          <div className="humidity">
-            <p className="bold">20%</p>
-            <p>Humidity</p>
-          </div>
-          <div className="wind">
-            <p className="bold">12 MPH</p>
-            <p>Wind Speed</p>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

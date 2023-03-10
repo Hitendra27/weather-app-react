@@ -11,6 +11,7 @@
       "icon": "10d"
     }
   ],
+  
   "base": "stations",
   "main": {
     "temp": 48.09,
