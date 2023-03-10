@@ -4,7 +4,10 @@ Building a React JS weather app using the OpenWeatherMap API.
 
 We will be using axios to connect with our API. 
 ### screenshots of the weather app.
-
+<img width="1440" alt="Screenshot 2023-03-10 at 03 23 26" src="https://user-images.githubusercontent.com/73651340/224356864-bff82902-22bf-4b18-a137-02f96ef480ff.png">
+<img width="1440" alt="Screenshot 2023-03-10 at 03 23 34" src="https://user-images.githubusercontent.com/73651340/224356897-8a7e6da7-7d8d-43fd-9c05-0f58e299decb.png">
+<img width="1440" alt="Screenshot 2023-03-10 at 03 23 42" src="https://user-images.githubusercontent.com/73651340/224356937-45da58c2-918e-4ec1-9cc0-16d0ade4256e.png">
+<img width="1440" alt="Screenshot 2023-03-10 at 03 23 52" src="https://user-images.githubusercontent.com/73651340/224356984-9bc3e7f6-67df-41a2-b8db-d8173a87d6e1.png">
 
 
 # Getting Started with Create React App
