@@ -1,5 +1,7 @@
 # Weather App in React
 
+View live demo here using github pages: [Live Demo](https://hitendra27.github.io/weather-app-react)
+
 Building a React JS weather app using the OpenWeatherMap API.
 
 We will be using axios to connect with our API. 
